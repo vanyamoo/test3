@@ -1,0 +1,11 @@
+0.  coined as the longest word in a dictionary (45-characters)
+1.  getrusage returns resource usage statistics for the calling process, which is the sum of resources used by all threads in the process. On success, zero is returned.
+2.  16
+3.  Because we want to pass the memory addresses of 'before' and 'after', as their values are calculated in a function outside of main, and therefore would be out of scope in main. 
+4.  Q: How does main read words from a file? A: IReading one character at a time (until it reaches EOF), for each character it checks if it's alphabetical or apostrophe; if it is, it appends it (only if it's less than 45 chars) to the current 'word'; if it's not alphabetical or apostrophe, it checks if it's a digit and if it is it keeps on reading until it reaches a non-alphanumerical character and then discards the word; if it's neither alphabetical character nor a digit, it checks if it already has generated a word and if it has it terminates it by adding '\0' at the end, increases words count, then checks the word's spelling, and if it's misspelled it increases the misspellings count and prints the misspelled word. 
+5.  TODO
+6.  The const qualifier is used to tell C that the variable value can not change after initialisation (at a later time within the program).
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
